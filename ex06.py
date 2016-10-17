@@ -19,7 +19,6 @@ my_list[-1]['atrribs'] = range(5)
 
 print my_list
 
-
 # Write the file in YAML format
 with open("yaml_file.yml", "w") as f:
     f.write(yaml.dump(my_list, default_flow_style=False))
@@ -27,4 +26,3 @@ with open("yaml_file.yml", "w") as f:
 # Write the file in JSON format
 with open("json_file.json", "w") as f:
     json.dump(my_list, f)
-

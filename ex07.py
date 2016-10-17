@@ -12,7 +12,7 @@ import json
 
 from pprint import pprint as pp
 
-# Read the file in YAML format and assign to a new_list
+# Read the file in YAML format and assign to a new list
 with open("yaml_file.yml") as f:
     yaml_list = yaml.load(f)
 
