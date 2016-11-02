@@ -11,7 +11,8 @@ cfg = CiscoConfParse("cisco_ipsec.txt")
 
 # Find all crypto map entries not using AES transform-set under crypto map
 
-no_aes = cfg.find_objects_wo_child(parentspec=r"^crypto map", childspec=r"AES") 
+no_aes = cfg.find_objects_wo_child(parentspec=r"^crypto map", 
+        childspec=r"AES") 
 
 print "The following entries are not using AES:"
 for each in no_aes:
